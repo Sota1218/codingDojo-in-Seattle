@@ -1,0 +1,50 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        {%load static%}
+        <link rel="stylesheet" href="{% static 'css/css.css' %}">
+    </head>
+    <body>
+            {% csrf_token %}
+            <h2>Thank you for your order!</h2>
+            <p>We ordered {{request.session.sum}} items for you and charged your student account on {{time}}.</p>
+            <u style="font-size: large;">You've ordered</u>
+            <table border="3">
+                <tr>
+                    <th>Fruit Name</th>
+                    <th>Quentity</th>
+                </tr>
+                <tr>
+                    <td>Strawberry</td>
+                    <td>
+                        {{request.session.Straw_Q}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rospberry</td>
+                    <td>
+                        {{request.session.Rosp_Q}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td>
+                        {{request.session.Apple_Q}}
+                    </td>
+                </tr>
+            </table>
+            <u style="font-size: large;">Your Information</u>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td>{{request.session.name}}</td>
+                </tr>
+                <tr>
+                    <td>Your student ID:</td>
+                    <td>{{request.session.ID}}</td>
+                </tr>
+
+            </table>
+
+    </body>
+</html>    

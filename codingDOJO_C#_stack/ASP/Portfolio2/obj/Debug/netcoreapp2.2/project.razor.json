@@ -1,0 +1,35 @@
+{
+  "FilePath": "/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Portfolio2/Portfolio2.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": "Portfolio2",
+  "Documents": [
+    {
+      "FilePath": "/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Portfolio2/views/Home/Home.cshtml",
+      "TargetPath": "views/Home/Home.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Portfolio2/views/Home/Projects.cshtml",
+      "TargetPath": "views/Home/Projects.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Portfolio2/views/Home/Contact.cshtml",
+      "TargetPath": "views/Home/Contact.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}

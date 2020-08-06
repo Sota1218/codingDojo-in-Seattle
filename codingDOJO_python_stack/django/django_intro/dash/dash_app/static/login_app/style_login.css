@@ -1,0 +1,22 @@
+body {
+	text-align: center;
+}
+table {
+	border: 3px solid rgb(129, 126, 126);
+	border-collapse: collapse;
+	margin-left: 28%;
+}
+body {
+	background: linear-gradient(#05fbff, #1d62f0) fixed;
+}
+td {
+	border-right: 2px #808080 solid;
+	border-left: 2px #808080 solid;
+	min-width: 240px;
+}
+tr:nth-child(odd) {
+	background-color: rgb(60, 192, 224);
+}
+td {
+	padding: 10px;
+}

@@ -1,0 +1,15 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        {%load static%}
+        <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    </head>
+    <body>
+        <h2>Thank you for your business!</h2>
+        <p>We charged your credit card for ${{request.session.result}}.</p>
+        <br>
+        <p>You have ordered {{request.session.count}} items so far and spent ${{request.session.total}} with Amadon.com!</p>
+        <br>
+        <a href="/amadon">Go back</a>
+    </body>
+</html>

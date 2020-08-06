@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h2>The Dojo Message Board</h2>
+		<hr />
+		<%- JSON.stringify(messages) %> <% if(messages.registration) { %> <% for
+		(var x of messages.registration){%>
+		<h3><%= x %></h3>
+		<% } %> <% } %>
+		<form action="/post" method="post">
+			<label for="name">Name:</label>
+			<input type="text" name="name" />
+			<label for="message">Message:</label>
+			<textarea name="message" id="" cols="20" rows="2"></textarea>
+			<input type="submit" value="Post message" />
+		</form>
+		<% for (var user of users){%>
+		<h2><%= user.name %></h2>
+		<ul>
+			<h2><%= user.message %></h2>
+			<ul>
+				<% for (var comment of user.comments){%>
+				<h2><%= comment.user_commented %></h2>
+				<h2><%= comment.comment %></h2>
+				<% } %>
+				<form action="/comment/<%= user._id%>" method="post">
+					<label for="user_commented">Name:</label>
+					<input type="text" name="user_commented" />
+					<label for="message">Comment:</label>
+					<textarea name="comment" id="" cols="50" rows="4"></textarea>
+					<input type="submit" value="Post comment" />
+				</form>
+			</ul>
+		</ul>
+		<% } %>
+	</body>
+</html>

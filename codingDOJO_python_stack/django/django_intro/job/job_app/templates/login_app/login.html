@@ -1,0 +1,66 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		{%load static%}
+		<link rel="stylesheet" href="{% static 'login_app/style_login.css'%}" />
+	</head>
+	<body>
+		<h2>Registration</h2>
+		{% if messages %}
+		<ul class="messages">
+			{% for message in messages %}
+			<li {% if message.tags %} class="{{ message.tags }}" {% endif %}>
+				{{ message }}
+			</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+		<table>
+			<form action="/register" method="POST">
+				{%csrf_token%}
+				<tr>
+					<td>First Name</td>
+					<td><input type="text" name="first_name" /></td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td><input type="text" name="last_name" /></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="text" name="email" /></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="text" name="password" /></td>
+				</tr>
+				<tr>
+					<td>Confirm PW</td>
+					<td><input type="text" name="conf_pw" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Register" /></td>
+				</tr>
+			</form>
+		</table>
+		<h2>Login</h2>
+		<table>
+			<form action="/login" method="POST">
+				{%csrf_token%}
+				<tr>
+					<td>Email</td>
+					<td><input type="text" name="email_log" /></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="text" name="password_log" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Login" /></td>
+				</tr>
+			</form>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+	</head>
+	@model FormSubmission.Models.User
+	<body>
+		<h3>Enter your information</h3>
+		<form asp-action="Create" asp-controller="Home" method="POST">
+			<span asp-validation-for="FirstName"></span>
+			<label asp-for="FirstName"></label>
+			<input asp-for="FirstName" />
+			<span asp-validation-for="LastName"></span>
+			<label asp-for="LastName"></label>
+			<input asp-for="LastName" />
+			<span asp-validation-for="Age"></span>
+			<label asp-for="Age"></label>
+			<input asp-for="Age" />
+			<span asp-validation-for="Email"></span>
+			<label asp-for="Email"></label>
+			<input asp-for="Email" />
+			<span asp-validation-for="Password"></span>
+			<label asp-for="Password"></label>
+			<input asp-for="Password" />
+			<input type="submit" value="Submit" />
+		</form>
+	</body>
+</html>

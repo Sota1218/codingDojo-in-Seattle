@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		@model Dish
+		<link rel="stylesheet" href="~/css/new.css" />
+		<div class="wrapper">
+			<a href="/" class="btn btn-primary">Home</a>
+			<h1>Add a new Dish!</h1>
+			<form asp-action="Create" asp-route="Home" method="post">
+				<div class="form-group">
+					<label asp-for="Chef"></label>
+					<span asp-validation-for="Chef"></span>
+					<input type="text" asp-for="Chef" class="form-control left" />
+				</div>
+				<div class="form-group">
+					<label asp-for="Name"></label>
+					<span asp-validation-for="Name"></span>
+					<input type="text" asp-for="Name" class="form-control left" />
+				</div>
+				<div class="form-group">
+					<label asp-for="Calories"></label>
+					<span asp-validation-for="Calories"></span>
+					<input type="text" asp-for="Calories" class="form-control left" />
+				</div>
+				<div class="form-group">
+					<label asp-for="Tastiness"></label>
+					<span asp-validation-for="Tastiness"></span>
+					<select name="Tastiness" class="form-control">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label asp-for="Description"></label>
+					<span asp-validation-for="Description"></span>
+					<textarea
+						name="Description"
+						cols="30"
+						rows="10"
+						class="form-control"
+					></textarea>
+				</div>
+				<input type="submit" value="Add Dish" class="btn btn-success" />
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+	<head>
+		{%load static%}
+		<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+	</head>
+	<body>
+		<h2>User's result:</h2>
+		<div class="detail">
+			<h3>Max score:{{request.session.max}}</h3>
+			<h3>Average score:{{request.session.ave}}</h3>
+		</div>
+		<img src="{% url 'test_app:img_plot' %}" alt="" />
+
+		<div class="rank">
+			<h2>Ranking:</h2>
+			<table>
+				<tr>
+					<th></th>
+					<th><h3>Today's Ranking</h3></th>
+					<th><h3>Month's Ranking</h3></th>
+				</tr>
+				{% for i in arr %}
+				<tr>
+					<td>{{ i }}</td>
+					<td>User name{{i}}: {% widthratio 400 i 1%}pt</td>
+					<td>User name{{i}}: {% widthratio 4500 i 1%}pt</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+		<div class="probability">
+			<h2>First roll probability</h2>
+			<table>
+				<tr>
+					<th>Category</th>
+					<th>Probability(%)</th>
+				</tr>
+				<tr>
+					<td>3 of a Kind</td>
+					<td>19.29%</td>
+				</tr>
+				<tr>
+					<td>4 of a Kind</td>
+					<td>1.93%</td>
+				</tr>
+				<tr>
+					<td>Big Straights</td>
+					<td>3.11%</td>
+				</tr>
+				<tr>
+					<td>Small Straights</td>
+					<td>21.60%</td>
+				</tr>
+				<tr>
+					<td>Full house</td>
+					<td>3.86%</td>
+				</tr>
+				<tr>
+					<td>Yahtzee</td>
+					<td>0.08%</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

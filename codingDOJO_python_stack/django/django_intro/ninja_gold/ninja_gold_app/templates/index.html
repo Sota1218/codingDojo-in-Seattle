@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+    <script type="text/javascript">
+        function addTF(str)
+        {
+            document.textForm.result.value += str;
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h3>Your Gold: {{request.session.total}}</h3>
+        </div>
+        <div class="boxes">
+            <div class="farm">
+                <h4>Farm</h4>
+                <h5>(earns 10-20 golds)</h5>
+                <form action="/process_money" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="farm0" value=""/>
+                    <input type="submit" value="Find Gold!" name="aaa"/>
+                </form>
+            </div>
+            <div class="cave">
+                <h4>Cave</h4>
+                <h5>(earns 5-10 golds)</h5>
+                <form action="/process_money" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="farm1" value=""/>
+                    <input type="submit" value="Find Gold!"/>
+                </form>
+            </div>
+            <div class="house">
+                <h4>House</h4>
+                <h5>(earns 2-5 golds)</h5>
+                <form action="/process_money" method="POST" >
+                    {% csrf_token %}
+                    <input type="hidden" name="farm2" value=""/>
+                    <input type="submit" value="Find Gold!"/>
+                </form>
+            </div>
+            <div class="casino">
+                <h4>Casino</h4>
+                <h5>(earns 0-50 golds)</h5>
+                <form action="/process_money" method="POST" name="form3">
+                    {% csrf_token %}
+                    <input type="hidden" name="farm3" value="">
+                    <input type="submit" value="Find Gold!" onClick="addTF('{{request.session.money}}')" >
+                </form>
+            </div>
+        </div>
+        <form action="/process_money" method="POST">
+            {% csrf_token %}
+            <input type="hidden" name="farm10" value=""/>
+            <input type="submit" value="Lost Gold..."/>
+        </form>
+
+        <div class="footer">
+            <h4>Activities:</h4>
+            <div class="textfield">
+                <form name="textForm">
+                    <textarea name="result">
+                        {% for a in request.session.activities %}
+                            {{a}}
+                        {% endfor %}
+                    </textarea>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

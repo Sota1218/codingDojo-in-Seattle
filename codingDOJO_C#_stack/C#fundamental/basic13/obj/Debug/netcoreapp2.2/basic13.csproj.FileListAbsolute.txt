@@ -1,0 +1,11 @@
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/basic13/obj/Debug/netcoreapp2.2/basic13.csprojAssemblyReference.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/basic13/obj/Debug/netcoreapp2.2/basic13.csproj.CoreCompileInputs.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/basic13/obj/Debug/netcoreapp2.2/basic13.AssemblyInfoInputs.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/basic13/obj/Debug/netcoreapp2.2/basic13.AssemblyInfo.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/basic13/bin/Debug/netcoreapp2.2/basic13.deps.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/basic13/bin/Debug/netcoreapp2.2/basic13.runtimeconfig.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/basic13/bin/Debug/netcoreapp2.2/basic13.runtimeconfig.dev.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/basic13/bin/Debug/netcoreapp2.2/basic13.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/basic13/bin/Debug/netcoreapp2.2/basic13.pdb
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/basic13/obj/Debug/netcoreapp2.2/basic13.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/basic13/obj/Debug/netcoreapp2.2/basic13.pdb

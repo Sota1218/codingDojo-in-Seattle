@@ -1,0 +1,11 @@
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Human/obj/Debug/netcoreapp2.2/Human.csprojAssemblyReference.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Human/obj/Debug/netcoreapp2.2/Human.csproj.CoreCompileInputs.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Human/obj/Debug/netcoreapp2.2/Human.AssemblyInfoInputs.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Human/obj/Debug/netcoreapp2.2/Human.AssemblyInfo.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Human/bin/Debug/netcoreapp2.2/Human.deps.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Human/bin/Debug/netcoreapp2.2/Human.runtimeconfig.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Human/bin/Debug/netcoreapp2.2/Human.runtimeconfig.dev.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Human/bin/Debug/netcoreapp2.2/Human.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Human/bin/Debug/netcoreapp2.2/Human.pdb
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Human/obj/Debug/netcoreapp2.2/Human.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Human/obj/Debug/netcoreapp2.2/Human.pdb

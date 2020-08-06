@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		{%load static%}
+		<link rel="stylesheet" href="{% static 'dash_app/style_dash.css' %}" />
+	</head>
+	<body>
+		<header>
+			<h2>Hello {{request.session.user_name}}!</h2>
+			<a href="/logout" class="logout">Logout</a>
+			<form action="/trips/new">
+				{%csrf_token%}
+				<button
+					class="Create"
+					style="width: 120px; height: 30px; background-color: rgb(255, 251, 0);"
+				>
+					Create a new trip!
+				</button>
+			</form>
+		</header>
+
+		<div>
+			<p class="heading">Everyone's jobs:</p>
+			<table>
+				<tr>
+					<th>Job</th>
+					<th>Locations</th>
+					<th>Actions</th>
+				</tr>
+				{% for user in other_users %} {% for job in user.join_jobs.all %}
+				<tr>
+					<td>{{job.name}}</td>
+					<td>{{job.location}}</td>
+					<td>
+						<a href="/jobs/{{job.id}}">Views</a>|<a
+							href="/jobs/Remove/{{jobs.id}}"
+							>Remove</a
+						>|<a href="/jobs/edit/{{jobs.id}}">Edit</a>|<a href="">Add</a>
+					</td>
+				</tr>
+				{% endfor %} {% endfor %}
+			</table>
+
+			<div>
+				<p class="heading">{{request.session.user_name}}'s jobs:</p>
+				<table>
+					<tr>
+						<th>Job</th>
+						<th>Actions</th>
+					</tr>
+					{% for job in user_jobs.all %}
+
+					<tr>
+						<td>{{job.name}}</td>
+						<td>
+							<a href="/jobs/{{job.id}}">views</a>|<a
+								href="/jobs/remove/{{job.id}}"
+								>Done</a
+							>|<a href="">Give up</a>
+						</td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

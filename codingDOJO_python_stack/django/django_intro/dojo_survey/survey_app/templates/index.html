@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        {%load static%}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <form action='/create_user' method='post' class='submit'>
+            {% csrf_token %}
+            <div class="name">
+                Your Name:<input type='text' name='name' class="name">
+            </div>
+            <div class="location">
+                Dojo Location:
+                <input type="search" list="list" name="location">
+                <datalist id="list">
+                    <option value="San jose">
+                    <option value="Seattle">
+                    <option value="NY">
+                    <option value="LA">
+                </datalist>
+            </div>
+            <div class="language">
+                Favorite language:
+                <input type="search" list="language" name="language">
+                <datalist id="language">
+                    <option value="ruby">
+                    <option value="python">
+                    <option value="C">
+                    <option value="C#">
+                </datalist>
+            </div>
+            <div class='comment'>
+                Comment(optional):
+                <input type='text' name="comment" class="comment">
+            </div>
+            <button type='submit'>button</button>
+        </form>
+    </body>
+</html>

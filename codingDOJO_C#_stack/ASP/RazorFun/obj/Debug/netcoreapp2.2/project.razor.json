@@ -1,0 +1,25 @@
+{
+  "FilePath": "/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/RazorFun/RazorFun.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": "RazorFun",
+  "Documents": [
+    {
+      "FilePath": "/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/RazorFun/Views/Index/Index.cshtml",
+      "TargetPath": "Views/Index/Index.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}

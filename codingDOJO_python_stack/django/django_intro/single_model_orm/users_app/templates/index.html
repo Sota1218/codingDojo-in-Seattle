@@ -1,0 +1,50 @@
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        {%load static%}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <h1>All the Users</h1>
+        <table class="table">
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+            {% for user in users %}
+            <tr id="data">
+                <td>{{user.id}}</td>
+                <td>{{ user.first_name }}</td>
+                <td>{{ user.last_name }}</td>
+                <td>{{ user.email_address }}</td>
+                <td>{{ user.age }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <p>_____________________________________________________________________________</p>
+        <h1>Add a User</h1>
+        <table>
+            <form action="/add" method="POST">
+                {% csrf_token %}
+                <table>
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text" name="first_name"></td>
+                        <td>Last Name:</td>
+                        <td><input type="text" name="last_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" name="email"></td>
+                        <td>Age:</td>
+                        <td><input type="number" name="age"></td>
+                    </tr>
+                </table>
+                <button type="submit">Add</button>
+            </form>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+img {
+	display: inline-block;
+}
+/* .detail {
+	display: inline-block;
+} */
+td {
+	padding: 20px;
+}
+.rank {
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	right: 400px;
+}
+table {
+	border-bottom: 1px;
+}
+.probability {
+	display: inline-block;
+	position: absolute;
+	bottom: 200px;
+	right: 100px;
+}

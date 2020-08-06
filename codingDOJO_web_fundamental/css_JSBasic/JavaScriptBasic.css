@@ -1,0 +1,44 @@
+.back{
+	border-radius: 10px;
+    background-color: navy;
+    width: 970px;
+    padding: 10px;
+}
+#url{
+	background-color: darkcyan;
+    border-radius: 10px;
+    width: 180px;
+    float: left;
+    padding: 10px;
+}
+a{
+    color: cyan;
+}
+body {
+    color: white;
+}
+span {
+    color: purple;
+}
+
+#tytle{    
+	background-color: red;
+    border-radius: 10px;
+    color: white;
+    margin: 0 0 15px 0;
+    padding: 1px 0 1px 10px;
+}
+#last{    
+	background-color: gray;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0 0 0;
+}
+#main{
+	background-color: black;
+    border-radius: 10px;
+    width: 720px;
+    margin: 0 0 0 215px;
+    padding: 10px;
+}
+}

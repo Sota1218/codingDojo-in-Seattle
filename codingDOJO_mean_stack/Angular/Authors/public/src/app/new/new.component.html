@@ -1,0 +1,64 @@
+<h3>Know of a pet needing a home</h3>
+<div>
+  <div *ngIf="errorMessage">
+    <p>{{ errorMessage }}</p>
+  </div>
+  <div *ngIf="errorMessage1">
+    <p>{{ errorMessage1 }}</p>
+  </div>
+  <div *ngIf="errorMessage2">
+    <p>{{ errorMessage2 }}</p>
+  </div>
+  <div *ngIf="errorMessage3">
+    <p>{{ errorMessage3 }}</p>
+  </div>
+  <form (submit)="createPet(addedPet)">
+    <label for="name">Pet name:</label>
+    <input type="text" name="name" id="name" [(ngModel)]="addedPet.name" />
+    <label for="type">Pet type:</label>
+    <input type="text" name="type" id="type" [(ngModel)]="addedPet.type" />
+    <label for="desc">Description:</label>
+    <input
+      type="text"
+      name="description"
+      id="desc"
+      [(ngModel)]="addedPet.description"
+    />
+    <br />
+
+    <p>Skills:</p>
+    <div id="skill">
+      <ul>
+        <label for="skill1">Skill 1:</label>
+        <input
+          type="text"
+          name="name"
+          id="skill1"
+          [(ngModel)]="addedPet.skill1"
+        />
+        <label for="skill2">Skill 2:</label>
+        <input
+          type="text"
+          name="name"
+          id="skill2"
+          [(ngModel)]="addedPet.skill2"
+        />
+        <label for="skill3">Skill 3:</label>
+        <input
+          type="text"
+          name="name"
+          id="skill3"
+          [(ngModel)]="addedPet.skill3"
+        />
+      </ul>
+    </div>
+    <!-- <input
+      type="hidden"
+      name="skill"
+      value="[addedPet.skill1,addedPet.skill2,addedPet.skill3]"
+      [(ngModel)]="addedpet.skill"
+    /> -->
+    <button (click)="goHome()">CANCEL</button>
+    <input type="submit" value="Add pet" />
+  </form>
+</div>

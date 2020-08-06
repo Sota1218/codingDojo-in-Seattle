@@ -1,0 +1,31 @@
+>>> from users_app.models import *
+>>> User.objects.create(first_name="SOTA",last_name="YOSHIHIRO",email_address="sota.gmail.com",age=2)
+<User: User object (1)>
+>>> User.objects.create(first_name="jon",last_name="jonjonjon",email_address="jon.gmail.com",age=89)
+<User: User object (2)>
+>>> User.objects.create(first_name="stupid",last_name="cucumber",email_address="stupid.gmail.com",age=45)
+<User: User object (3)>
+>>> User.objects.all()
+<QuerySet [<User: User object (1)>, <User: User object (2)>, <User: User object (3)>]>
+>>> User.objects.last()
+<User: User object (3)>
+>>> User.objects.first()
+<User: User object (1)>
+>>> c=User.objects.get(id=3)
+>>> _name="Pancakes
+  File "<console>", line 1
+    _name="Pancakes
+                  ^
+SyntaxError: EOL while scanning string literal
+>>> c.last_name="Pancakes"
+>>> c.save()
+>>> User.objects.last()
+<User: User object (3)>
+>>> a=User.objects.get(id=2)
+>>> a.delete()
+(1, {'users_app.User': 1})
+>>> User.objects.all().order_by("first_name")
+<QuerySet [<User: User object (1)>, <User: User object (3)>]>
+>>> User.objects.all().order_by("-first_name")
+<QuerySet [<User: User object (3)>, <User: User object (1)>]>
+>>> 

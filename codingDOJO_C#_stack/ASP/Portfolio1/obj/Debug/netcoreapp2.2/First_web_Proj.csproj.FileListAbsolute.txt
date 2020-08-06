@@ -1,0 +1,14 @@
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/First_web_Proj/bin/Debug/netcoreapp2.2/First_web_Proj.deps.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/First_web_Proj/bin/Debug/netcoreapp2.2/First_web_Proj.runtimeconfig.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/First_web_Proj/bin/Debug/netcoreapp2.2/First_web_Proj.runtimeconfig.dev.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/First_web_Proj/bin/Debug/netcoreapp2.2/First_web_Proj.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/First_web_Proj/bin/Debug/netcoreapp2.2/First_web_Proj.pdb
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/First_web_Proj/obj/Debug/netcoreapp2.2/First_web_Proj.csprojAssemblyReference.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/First_web_Proj/obj/Debug/netcoreapp2.2/First_web_Proj.csproj.CoreCompileInputs.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/First_web_Proj/obj/Debug/netcoreapp2.2/First_web_Proj.RazorAssemblyInfo.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/First_web_Proj/obj/Debug/netcoreapp2.2/First_web_Proj.RazorAssemblyInfo.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/First_web_Proj/obj/Debug/netcoreapp2.2/First_web_Proj.AssemblyInfoInputs.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/First_web_Proj/obj/Debug/netcoreapp2.2/First_web_Proj.AssemblyInfo.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/First_web_Proj/obj/Debug/netcoreapp2.2/First_web_Proj.RazorTargetAssemblyInfo.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/First_web_Proj/obj/Debug/netcoreapp2.2/First_web_Proj.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/First_web_Proj/obj/Debug/netcoreapp2.2/First_web_Proj.pdb

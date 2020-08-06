@@ -1,0 +1,11 @@
+<html>
+	<body>
+		<h2>Here are the awesome quotes!</h2>
+		<% for(var user of users){%>
+		<h3>"<%= user.quote %>"</h3>
+		<br />
+		<h4><%= user.name %> at <%= user.createdAt %></h4>
+		<hr />
+		<% } %>
+	</body>
+</html>

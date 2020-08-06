@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        {%load static%}
+        <link rel="stylesheet" href="{% static 'css/tv.css' %}">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Create</title>
+    </head>
+    <body>
+        <h2>Edit Show {{id}}</h2>
+        <a href="/shows">Go Back</a>
+        {% if messages %}
+        <ul class="messages">    
+            {% for message in messages %}    
+                <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>    
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        <form action="/edit/{{id}}" method="POST">
+            {% csrf_token %}
+            <p>Title</p>
+            <input type="text" name="title" value="{{one_show.title}}" placeholder="">
+            <p>Network</p>
+            <input type="text" name="network" value="{{one_show.network}}">
+            <p>Release Date</p>
+            <input type="date" pattern="\d{4}-\d{2}-\d{2}" name="release_date" value={{one_show.release_date}}>
+            
+            <p>Description</p>
+            <textarea name="desc" id="desc-input" cols="30" rows="5">{{one_show.desc}}</textarea>
+            <input type="submit" value="Update">
+        </form>
+        <a href="/shows/{{id}}">Go to Show</a>
+    </body>
+</html>

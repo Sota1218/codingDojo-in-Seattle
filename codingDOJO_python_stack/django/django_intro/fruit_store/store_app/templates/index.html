@@ -1,0 +1,53 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        {%load static%}
+        <link rel="stylesheet" href="{% static 'css/css.css' %}">
+    </head>
+    <body>
+        <form action="/buy" method="post" class='submit'>
+            {% csrf_token %}
+            <h2>Dojo Fruit Store!</h2>
+            <u>What would you like to buy?</u>
+            <table border="3">
+                <tr>
+                    <th>Fruit Name</th>
+                    <th>Quentity</th>
+                </tr>
+                <tr>
+                    <td>Strawberry</td>
+                    <td>
+                        <input type="number" name="Strawberry">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rospberry</td>
+                    <td>
+                        <input type="number" name="Rospberry">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td>
+                        <input type="number" name="Apple">
+                    </td>
+                </tr>
+            </table>
+            <u>Your Information</u>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type='text' name='name' style="border: 1px solid black;"></td>
+                </tr>
+                <tr>
+                    <td>Your student ID:</td>
+                    <td><input type='text' name='ID' style="border: 1px solid black;"></td>
+                </tr>
+
+            </table>
+            <button type='submit'>Buy me stuff!</button>
+        
+        </form>
+
+    </body>
+</html>    

@@ -1,0 +1,17 @@
+<a (click)="goHome()">Home</a>
+<h3>Detail about {{ onePet.name }}</h3>
+<br />
+<div>Pet type: {{ onePet.type }}</div>
+<br />
+<div>Description: {{ onePet.description }}</div>
+<br />
+<div>
+  Skills: {{ onePet.skill[0] }} , {{ onePet.skill[1] }} , {{ onePet.skill[2] }}
+</div>
+<br />
+<div>Likes: {{ onePet.like }}</div>
+<br />
+<div>
+  <button (click)="addLike()" onclick="disabled=true;">Like this pet!</button>
+  <button (click)="delete()">Adopt this pet!</button>
+</div>

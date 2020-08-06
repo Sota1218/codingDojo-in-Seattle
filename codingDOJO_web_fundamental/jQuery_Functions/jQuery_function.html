@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html =en>
+<head>
+	<title>jQuery functions</title>
+	<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<main_contents>
+		<div class='addclass'>
+			<h2>AddClass</h2>
+			<button class="button1">AddClass</button><p>Click the button to add class 'red' to this paragraph</p>		
+		</div>
+		<div class='slidetoggle'>
+			<h2>Slidetoggle</h2>
+			<button class="button2">Slidetoggle</button><p>Click the button to slidetoggle a hidden image</p>		
+		</div>
+		<div class='append'>
+			<h2>Append</h2>
+			<button class="button3">Append</button><p>Click the button to append a new paragraph</p>		
+		</div>
+		<div class='more'>
+			<button class="button4">Append more..</button><p>Click the button to append a new contents</p>		
+		</div>
+		<div class='slideon hide'>
+			<h2>hide</h2>
+			<button class="button5">hide</button><p>Click the button to hide a new paragraph</p>		
+		</div>
+		<div class='hide'>
+			<h2>hide</h2>
+			<button class="button6">hide</button><p>Click the button to hide a new paragraph</p>		
+		</div>
+		<div class='hide'>
+			<h2>hide</h2>
+			<button class="button7">hide</button><p>Click the button to hide a new paragraph</p>		
+		</div>
+		<div class='hide'>
+			<h2>hide</h2>
+			<button class="button8">hide</button><p>Click the button to hide a new paragraph</p>		
+		</div>
+		<div class='hide'>
+			<h2>hide</h2>
+			<button class="button9">hide</button><p>Click the button to hide a new paragraph</p>		
+		</div>
+		<div class='hide'>
+			<h2>hide</h2>
+			<button class="button10">hide</button><p>Click the button to hide a new paragraph</p>		
+		</div>
+		<div class='hide'>
+			<h2>hide</h2>
+			<button class="button3">hide</button><p>Click the button to hide a new paragraph</p>		
+		</div>
+		<script type="text/javascript">
+			$('.button1').click(function(){
+				$('.addclass p').addClass('red');
+			})
+			$('.button2').click(function(){
+				$('.slidetoggle p').slideToggle();
+			})
+			$('.button3').click(function(){
+				$('.append p').append(' yeah!!');
+			})
+			$('.button4').click(function(){
+				$('.hide').show();
+			})
+			$('.button5').click(function(){
+				$('.slideon').slideOn();
+			})
+
+			$('.hide').hide()
+
+			
+		</script>	
+	</main_contents>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		@{ ViewData["Title"] = "Home Page"; }
+
+		<p>Fullness:@ViewBag.full</p>
+		<p>Happiness:@ViewBag.happy</p>
+		<p>Meals:@ViewBag.meals</p>
+		<p>Energy:@ViewBag.energy</p>
+		<p>@ViewBag.message</p>
+		<br /><br /><br />
+		<form asp-action="Feed" asp-controller="Home" method="post">
+			<input type="submit" name="" id="" value="Feed" />
+		</form>
+		<form asp-action="Play" asp-controller="Home" method="post">
+			<input type="submit" value="Play" />
+		</form>
+		<form asp-action="Work" asp-controller="Home" method="post">
+			<input type="submit" value="Work" />
+		</form>
+		<form asp-action="Sleep" asp-controller="Home" method="post">
+			<input type="submit" value="Sleep" />
+		</form>
+	</body>
+</html>

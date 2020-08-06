@@ -1,0 +1,11 @@
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Fundamental1/bin/Debug/netcoreapp2.2/Fundamental1.deps.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Fundamental1/bin/Debug/netcoreapp2.2/Fundamental1.runtimeconfig.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Fundamental1/bin/Debug/netcoreapp2.2/Fundamental1.runtimeconfig.dev.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Fundamental1/bin/Debug/netcoreapp2.2/Fundamental1.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Fundamental1/bin/Debug/netcoreapp2.2/Fundamental1.pdb
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Fundamental1/obj/Debug/netcoreapp2.2/Fundamental1.csprojAssemblyReference.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Fundamental1/obj/Debug/netcoreapp2.2/Fundamental1.csproj.CoreCompileInputs.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Fundamental1/obj/Debug/netcoreapp2.2/Fundamental1.AssemblyInfoInputs.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Fundamental1/obj/Debug/netcoreapp2.2/Fundamental1.AssemblyInfo.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Fundamental1/obj/Debug/netcoreapp2.2/Fundamental1.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Fundamental1/obj/Debug/netcoreapp2.2/Fundamental1.pdb

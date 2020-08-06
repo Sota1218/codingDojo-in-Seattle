@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <meta charset="en">
+        {%load static%}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <h2>Success!Welcome,{{request.session.name}}</h2>
+        <a href="/">Log out</a>
+        <p>Successfully registered for logged in!</p>
+    </body>
+</html>

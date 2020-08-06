@@ -1,0 +1,48 @@
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/bin/Debug/netcoreapp2.2/Dojo_Survey.deps.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/bin/Debug/netcoreapp2.2/Dojo_Survey.runtimeconfig.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/bin/Debug/netcoreapp2.2/Dojo_Survey.runtimeconfig.dev.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/bin/Debug/netcoreapp2.2/Dojo_Survey.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/bin/Debug/netcoreapp2.2/Dojo_Survey.pdb
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/bin/Debug/netcoreapp2.2/Dojo_Survey.Views.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/bin/Debug/netcoreapp2.2/Dojo_Survey.Views.pdb
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.csprojAssemblyReference.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.csproj.CoreCompileInputs.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.RazorAssemblyInfo.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.RazorAssemblyInfo.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.AssemblyInfoInputs.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.AssemblyInfo.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.TagHelpers.input.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.TagHelpers.output.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.RazorCoreGenerate.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.RazorTargetAssemblyInfo.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.RazorTargetAssemblyInfo.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.Views.pdb
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.pdb
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Dojo_Survey.csproj.CopyComplete
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey/obj/Debug/netcoreapp2.2/Razor/Views/Results/results.g.cshtml.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/bin/Debug/netcoreapp2.2/Dojo_Survey.deps.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/bin/Debug/netcoreapp2.2/Dojo_Survey.runtimeconfig.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/bin/Debug/netcoreapp2.2/Dojo_Survey.runtimeconfig.dev.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/bin/Debug/netcoreapp2.2/Dojo_Survey.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/bin/Debug/netcoreapp2.2/Dojo_Survey.pdb
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/bin/Debug/netcoreapp2.2/Dojo_Survey.Views.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/bin/Debug/netcoreapp2.2/Dojo_Survey.Views.pdb
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Dojo_Survey.csprojAssemblyReference.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Dojo_Survey.csproj.CoreCompileInputs.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Dojo_Survey.RazorAssemblyInfo.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Dojo_Survey.RazorAssemblyInfo.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Dojo_Survey.AssemblyInfoInputs.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Dojo_Survey.AssemblyInfo.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Dojo_Survey.TagHelpers.input.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Dojo_Survey.TagHelpers.output.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Dojo_Survey.RazorCoreGenerate.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Razor/Views/Home/results.g.cshtml.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Dojo_Survey.RazorTargetAssemblyInfo.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Dojo_Survey.RazorTargetAssemblyInfo.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Dojo_Survey.Views.pdb
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Dojo_Survey.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Dojo_Survey.pdb
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey copy/obj/Debug/netcoreapp2.2/Dojo_Survey.csproj.CopyComplete

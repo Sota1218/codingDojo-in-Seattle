@@ -1,0 +1,16 @@
+body{
+    background-color: blueviolet;
+}
+.submit{
+    background-color: coral;
+    margin-left: 300px;
+    max-width: 250px;
+    padding: 20px;
+}
+.name.location.language.comment{
+    padding: 10px;
+    margin: 10px;
+}
+.comment{
+    background-color: cornflowerblue!important;
+}

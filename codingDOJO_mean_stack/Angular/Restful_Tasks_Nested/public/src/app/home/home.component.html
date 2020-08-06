@@ -1,0 +1,25 @@
+<h1>Restful Tasks API</h1>
+<br />
+<h3>All the tasks:</h3>
+<br />
+<button (click)="getTasksFromService()">GET ALL TASKS</button>
+<ul>
+  <li *ngFor="let task of allTasks">
+    {{ task.title }}
+    <button (click)="getDetails(task._id)">SHOW</button>
+  </li>
+  <br />
+  <br />
+</ul>
+<br />
+<app-task [taskDetailFromHome]="oneTask"></app-task>
+
+<!-- <h3>The third task:</h3>
+<ul>
+  <p *ngIf="allTasks[2]">
+    {{ allTasks[2].title }} - {{ allTasks[2].description }}
+  </p>
+</ul> -->
+<!-- <button (click)="onButtonClickParam(5)">Click me!</button>
+<button (click)="onButtonClickParams(5, 'hello')">Click me!</button>
+<button (click)="onButtonClickEvent($event)">Click me!</button> -->

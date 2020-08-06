@@ -1,0 +1,7 @@
+*{
+    background: linear-gradient(#05FBFF, #1D62F0 ) fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: inline-block;
+}

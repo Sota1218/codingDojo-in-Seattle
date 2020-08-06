@@ -1,0 +1,240 @@
+>>> from dojo_ninjas_app.models import *
+>>> dojos.objects.create(name="Sota Yoshihiro",city="Seattle",state="WA")
+<dojos: dojos object (1)>
+>>> dojos.objects.create(name="John F Kennedy",city="LA",state="CA")
+<dojos: dojos object (2)>
+>>> dojos.objects.create(name="Barack Hussein Obama",city="NY",state="NY")
+<dojos: dojos object (3)>
+>>> make a mistake
+  File "<console>", line 1
+    make a mistake
+         ^
+SyntaxError: invalid syntax
+>>> dojos.objects.get(id=1,2,3)
+  File "<console>", line 1
+SyntaxError: positional argument follows keyword argument
+>>> dojos.objects.get(id=1,id=2)
+  File "<console>", line 1
+SyntaxError: keyword argument repeated
+>>> dojos.objects.get(id=1).delete()
+(1, {'dojo_ninjas_app.ninjas': 0, 'dojo_ninjas_app.dojos': 1})
+>>> dojos.objects.get(id=2).delete()
+(1, {'dojo_ninjas_app.ninjas': 0, 'dojo_ninjas_app.dojos': 1})
+>>> dojos.objects.get(id=3).delete()
+(1, {'dojo_ninjas_app.ninjas': 0, 'dojo_ninjas_app.dojos': 1})
+>>> dojos.objects.all()
+<QuerySet []>
+>>> dojos.objects.create(name="codingDOJO in Seattle",city="Bellevue",state="WA")
+<dojos: dojos object (4)>
+>>> dojos.objects.create(name="codingDOJO in Ginza",city="Tokyo",state="NONE")
+<dojos: dojos object (5)>
+>>> dojos.objects.get(id=5).delete()
+(1, {'dojo_ninjas_app.ninjas': 0, 'dojo_ninjas_app.dojos': 1})
+>>> dojos.objects.create(name="codingDOJO in LA",city="LA",state="CA")
+<dojos: dojos object (6)>
+>>> dojos.objects.create(name="codingDOJO in NY",city="NY",state="NY")
+<dojos: dojos object (7)>
+>>> dojos.objects.all()
+<QuerySet [<dojos: dojos object (4)>, <dojos: dojos object (6)>, <dojos: dojos object (7)>]>
+\>>> 
+>>> this_dojo=dojos.objects.get(id=4)
+>>> ninjas.objects.create(dojo=this_dojo,first_name="Sota",last_name="Yoshihiro")
+<ninjas: ninjas object (1)>
+>>> ninjas.objects.create(dojo=this_dojo,first_name="Cucumber",last_name="ABCDE")
+<ninjas: ninjas object (2)>
+>>> ninjas.objects.create(dojo=this_dojo,first_name="Rabbit",last_name="Carrot")
+<ninjas: ninjas object (3)>
+>>> ninjas.objects.all()
+<QuerySet [<ninjas: ninjas object (1)>, <ninjas: ninjas object (2)>, <ninjas: ninjas object (3)>]>
+>>> that_dojo=dojos.objects.get(id=5)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/models/query.py", line 406, in get
+    raise self.model.DoesNotExist(
+dojo_ninjas_app.models.dojos.DoesNotExist: dojos matching query does not exist.
+>>> that_dojo=dojos.objects.get(id=6)
+>>> ninjas.objects.create(dojo=that_dojo,first_name="Rabbit2",last_name="Carrot2")
+<ninjas: ninjas object (4)>
+>>> ninjas.objects.create(dojo=that_dojo,first_name="Ra2345",last_name="Carr2235")
+<ninjas: ninjas object (5)>
+>>> ninjas.objects.create(dojo=that_dojo,first_name="lion",last_name="CucumberMKR")
+<ninjas: ninjas object (6)>
+>>> it_dojo=dojos.objects.get(id=7)
+>>> ninjas.objects.create(dojo=it_dojo,first_name="Tiger",last_name="Car")
+<ninjas: ninjas object (7)>
+>>> ninjas.objects.create(dojo=it_dojo,first_name="Jugguer",last_name="ilan")
+<ninjas: ninjas object (8)>
+>>> ninjas.objects.create(dojo=it_dojo,first_name="Carps",last_name="Blue")
+<ninjas: ninjas object (9)>
+>>> ninjas.objects.all()
+<QuerySet [<ninjas: ninjas object (1)>, <ninjas: ninjas object (2)>, <ninjas: ninjas object (3)>, <ninjas: ninjas object (4)>, <ninjas: ninjas object (5)>, <ninjas: ninjas object (6)>, <ninjas: ninjas object (7)>, <ninjas: ninjas object (8)>, <ninjas: ninjas object (9)>]>
+>>> ninjas1=ninjas.objects.filter(dojo=dojos.objects.get(id=4))
+>>> ninjas1.delete()
+(3, {'dojo_ninjas_app.ninjas': 3})
+>>> ninjas.objects.all()
+<QuerySet [<ninjas: ninjas object (4)>, <ninjas: ninjas object (5)>, <ninjas: ninjas object (6)>, <ninjas: ninjas object (7)>, <ninjas: ninjas object (8)>, <ninjas: ninjas object (9)>]>
+>>> ninjas2=ninjas.objects.filter(dojo=dojos.objects.get(id=6))
+>>> ninjas2=delete()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'delete' is not defined
+>>> ninjas2.delete()
+(3, {'dojo_ninjas_app.ninjas': 3})
+>>> ninjas3=ninjas.objects.filter(dojo=dojos.objects.get(id=7))
+>>> ninja3.delete()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'ninja3' is not defined
+>>> ninjas3.delete()
+(3, {'dojo_ninjas_app.ninjas': 3})
+>>> ninjas.objects.all()
+<QuerySet []>
+>>> 
+now exiting InteractiveConsole...
+USERnoMacBook-Air:dojo_ninjas_proj sotayoshihiro$ python manage.py makemigrations
+No changes detected
+USERnoMacBook-Air:dojo_ninjas_proj sotayoshihiro$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, dojo_ninjas_app, sessions
+Running migrations:
+  No migrations to apply.
+USERnoMacBook-Air:dojo_ninjas_proj sotayoshihiro$ python manage.py shell
+Python 3.8.0 (default, Oct 24 2019, 14:58:20) 
+[Clang 10.0.1 (clang-1001.0.46.4)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> dojos.objects.create(name="codingDOJOinLA",city="LA",state="CA",desc="Let's enjoy!")
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'dojos' is not defined
+>>> from dojo_ninjas_app.models import dojos
+>>> dojos.objects.create(name="codingDOJOinLA",city="LA",state="CA",desc="Let's enjoy!")
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/models/query.py", line 420, in create
+    obj = self.model(**kwargs)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/models/base.py", line 501, in __init__
+    raise TypeError("%s() got an unexpected keyword argument '%s'" % (cls.__name__, kwarg))
+TypeError: dojos() got an unexpected keyword argument 'desc'
+>>> 
+now exiting InteractiveConsole...
+USERnoMacBook-Air:dojo_ninjas_proj sotayoshihiro$ python manage.py makemigrations
+You are trying to add a non-nullable field 'desc' to dojos without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> from dojo_ninjas_app.models import dojos
+Invalid input: invalid syntax (<string>, line 1)
+>>> Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/core/management/__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/core/management/base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/core/management/base.py", line 364, in execute
+    output = self.handle(*args, **options)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/core/management/base.py", line 83, in wrapped
+    res = handle_func(*args, **kwargs)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/core/management/commands/makemigrations.py", line 164, in handle
+    changes = autodetector.changes(
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/migrations/autodetector.py", line 43, in changes
+    changes = self._detect_changes(convert_apps, graph)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/migrations/autodetector.py", line 185, in _detect_changes
+    self.generate_added_fields()
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/migrations/autodetector.py", line 850, in generate_added_fields
+    self._generate_added_field(app_label, model_name, field_name)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/migrations/autodetector.py", line 871, in _generate_added_field
+    field.default = self.questioner.ask_not_null_addition(field_name, model_name)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/migrations/questioner.py", line 159, in ask_not_null_addition
+    return self._ask_default()
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/migrations/questioner.py", line 130, in _ask_default
+    code = input(prompt)
+EOFError
+USERnoMacBook-Air:dojo_ninjas_proj sotayoshihiro$ python manage.py makemigrations
+You are trying to add a non-nullable field 'desc' to dojos without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> dojos.objects.create(name=""^[[3~^[[3~^[[3~^[[3~^[[A^[[A^[[A^[[A^[[A^[[2~^[[2~^[[F^[[H^[[H^[b        
+Invalid input: invalid syntax (<string>, line 1)
+>>> dojos.objects.create()^[[D^[^[[C^[[C^[[C^CTraceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/core/management/__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/core/management/base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/core/management/base.py", line 364, in execute
+    output = self.handle(*args, **options)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/core/management/base.py", line 83, in wrapped
+    res = handle_func(*args, **kwargs)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/core/management/commands/makemigrations.py", line 164, in handle
+    changes = autodetector.changes(
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/migrations/autodetector.py", line 43, in changes
+    changes = self._detect_changes(convert_apps, graph)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/migrations/autodetector.py", line 185, in _detect_changes
+    self.generate_added_fields()
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/migrations/autodetector.py", line 850, in generate_added_fields
+    self._generate_added_field(app_label, model_name, field_name)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/migrations/autodetector.py", line 871, in _generate_added_field
+    field.default = self.questioner.ask_not_null_addition(field_name, model_name)
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/migrations/questioner.py", line 159, in ask_not_null_addition
+    return self._ask_default()
+  File "/Users/sotayoshihiro/.pyenv/versions/3.8.0/lib/python3.8/site-packages/django/db/migrations/questioner.py", line 130, in _ask_default
+    code = input(prompt)
+KeyboardInterrupt
+
+USERnoMacBook-Air:dojo_ninjas_proj sotayoshihiro$ python manage.py makemigrations
+You are trying to add a non-nullable field 'desc' to dojos without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> dojos.objects.create(name="la",city='lala',state='la',desc='jhfowhij')
+Invalid input: name 'dojos' is not defined
+>>> from dojo_ninjas_app import *
+Invalid input: invalid syntax (<string>, line 1)
+>>> 2
+Migrations for 'dojo_ninjas_app':
+  dojo_ninjas_app/migrations/0002_dojos_desc.py
+    - Add field desc to dojos
+USERnoMacBook-Air:dojo_ninjas_proj sotayoshihiro$ makemigrate
+bash: makemigrate: command not found
+USERnoMacBook-Air:dojo_ninjas_proj sotayoshihiro$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, dojo_ninjas_app, sessions
+Running migrations:
+  Applying dojo_ninjas_app.0002_dojos_desc... OK
+USERnoMacBook-Air:dojo_ninjas_proj sotayoshihiro$ python manage.py shell
+Python 3.8.0 (default, Oct 24 2019, 14:58:20) 
+[Clang 10.0.1 (clang-1001.0.46.4)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from dojo_ninjas_app.models import dojos
+>>> dojos.objects.create(name="codingDOJOinLA",city="LA",state="CA",desc="Let's enjoy coding!!")
+<dojos: dojos object (8)>
+>>> 

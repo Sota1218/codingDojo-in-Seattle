@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Baked by {{ cakeDetailFromHome.baker_name }}</h2>
+    <img src="{{ cakeDetailFromHome.image }}" alt="image" />
+    <h4>Average rating: {{ average_rating }} stars</h4>
+    <div *ngFor="let comment of cakeDetailFromHome.comment">
+      <br />
+      <h4>{{ comment.comment }}</h4>
+      <br />
+    </div>
+  </body>
+</html>

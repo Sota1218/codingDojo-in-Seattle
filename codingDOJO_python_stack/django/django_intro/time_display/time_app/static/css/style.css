@@ -1,0 +1,13 @@
+p{
+    padding: 10px;
+    border: solid 3px black;
+    max-width: 169px;
+    display: inline-block;
+    margin-left: 450px;
+}
+h1{
+    border: solid 3px black;
+    padding: 10px;
+    max-width: 305px;
+    margin-left: 378px;
+}

@@ -1,0 +1,11 @@
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Phone/bin/Debug/netcoreapp2.2/Phone.deps.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Phone/bin/Debug/netcoreapp2.2/Phone.runtimeconfig.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Phone/bin/Debug/netcoreapp2.2/Phone.runtimeconfig.dev.json
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Phone/bin/Debug/netcoreapp2.2/Phone.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Phone/bin/Debug/netcoreapp2.2/Phone.pdb
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Phone/obj/Debug/netcoreapp2.2/Phone.csprojAssemblyReference.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Phone/obj/Debug/netcoreapp2.2/Phone.csproj.CoreCompileInputs.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Phone/obj/Debug/netcoreapp2.2/Phone.AssemblyInfoInputs.cache
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Phone/obj/Debug/netcoreapp2.2/Phone.AssemblyInfo.cs
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Phone/obj/Debug/netcoreapp2.2/Phone.dll
+/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/Phone/obj/Debug/netcoreapp2.2/Phone.pdb

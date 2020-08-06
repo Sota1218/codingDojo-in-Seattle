@@ -1,0 +1,19 @@
+{
+  "FilePath": "/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Portfolio1/First_web_Proj.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": "First_web_Proj",
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}

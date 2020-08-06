@@ -1,0 +1,30 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		{%load static%}
+		<link rel="stylesheet" href="{% static 'style.css' %}" />
+	</head>
+	<body>
+		<header>
+			<h2>Welcome,{{request.session.user_name}}!</h2>
+			<a href="/logout">Log out</a>
+			__________________________________________________________________________________________________
+		</header>
+		<main>
+			<div class="add">
+				<h2>add a Favorite Book</h2>
+				<form action="/books/add" method="post">
+					{%csrf_token%}
+					<label for="title">Title:</label>
+					<input type="text" id="title" name="title" />
+					<label for="desc">Description:</label>
+					<input type="textarea" name="desc" id="desc" />
+					<input type="submit" value="Add" />
+				</form>
+			</div>
+			<div class="all_books">
+				<h2>All Books</h2>
+			</div>
+		</main>
+	</body>
+</html>

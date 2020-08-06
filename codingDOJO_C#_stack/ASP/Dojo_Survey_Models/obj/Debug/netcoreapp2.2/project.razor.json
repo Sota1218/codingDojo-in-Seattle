@@ -1,0 +1,30 @@
+{
+  "FilePath": "/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey_Models/Dojo_Survey.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": "Dojo_Survey",
+  "Documents": [
+    {
+      "FilePath": "/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey_Models/Views/Home/results.cshtml",
+      "TargetPath": "Views/Home/results.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/sotayoshihiro/Documents/codingDojoSeattle/codingDOJO_C#_stack/ASP/Dojo_Survey_Models/Views/Home/Index.cshtml",
+      "TargetPath": "Views/Home/Index.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}

@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<h2>Welcome to Quoting Dojo</h2>
+		<!-- tip to easily see objects printed in full instead of [object Object] -->
+		<%- JSON.stringify(messages) %>
+		<!-- based on the structure of your messages, determine how to display them -->
+		<% if(messages.registration) { %> <% for (var x of messages.registration)
+		{%>
+		<h3><%= x %></h3>
+		<% } %> <% } %>
+		<form action="/quotes" method="post">
+			<div>your name:<input type="text" name="name" /></div>
+			<div>
+				Your quote:
+				<textarea name="quote" id="quote" cols="20" rows="10"></textarea>
+			</div>
+			<div><input type="submit" value="Add a quote" /></div>
+		</form>
+		<a href="/quotes"><button>Skip to quotes!</button></a>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        {%load static%}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <h2>Amadon store!</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+            {% for item in Items %}
+            <tr>
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+                <form action="/amadon/buy" method="POST">
+                {% csrf_token %}
+                <td>
+                    <select name='quantity'>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    <input type='hidden' name='price' value='{{item.price}}' />
+                    <button type='submit'>Buy!</button>
+                </td>
+                </form>
+            </tr>
+            {% endfor %}
+            
+
+        </table>
+    </body>
+</html>

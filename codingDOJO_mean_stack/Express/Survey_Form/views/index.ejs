@@ -1,0 +1,30 @@
+<html>
+	<body>
+		<form action="/submit" method="post">
+			<div>your name:<input type="text" name="name" /></div>
+			<div>
+				Dojo location:
+				<input type="text" name="dojo" list="list" />
+				<datalist id="list">
+					<option value="Seattle"></option>
+					<option value="New york"></option>
+					<option value="San jose"></option>
+				</datalist>
+			</div>
+			<div>
+				Favorite language:
+				<input type="text" name="lang" list="lang" />
+				<datalist id="lang">
+					<option value="JS"></option>
+					<option value="Python"></option>
+					<option value="Ruby"></option>
+				</datalist>
+			</div>
+			<div>
+				Comment(optional):
+				<textarea name="comment" cols="30" rows="10"></textarea>
+			</div>
+			<div><input type="submit" value="Submit" /></div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+pip list-> show the list of package
+deactivate->escape from activate state
+pip3 list->show the list of package for python3
+source myEnvironments/py3Env/bin/activate->create a virtual environment for python3
+pip install Django==1.11.9->install Django package
+pip freeze->it doesn't show the tools of management package
+pip freeze > requirements.txt->install the package in lump　even if it's in other environment
+pip uninstall Django->uninstall the Django
+pip show Django->show the detail of Django
+pip search Flask->　search the Flask package
